@@ -96,3 +96,27 @@ public:
    }
    
 };
+
+int main()
+{
+   matrix rf(3,3), ff(3,3);
+   rf.accept();
+   cout << "\nrf\n";
+   rf.display();
+   
+   ff.accept();
+   cout << "\nff\n";
+   ff.display();
+   
+   cout << "\nff = ff + rf\n";
+   ff = ff + rf;
+   ff.display();
+   
+   cout << "\nff = (rf * ff)\n";
+   ff = (rf * ff);
+   ff.display();
+   
+   cout << "\nrf += ff\n";
+   rf += ff;
+   rf.display();
+}
